@@ -1,5 +1,6 @@
 package com.example.todolisttutorial
 
+import android.app.AlertDialog
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -39,5 +40,15 @@ class MainActivity : AppCompatActivity(), TaskItemClickListener {
 
     override fun completeTaskItem(taskItem: TaskItem) {
         taskViewModel.setCompleted(taskItem)
+    }
+    override fun deleteTaskItem(taskItem: TaskItem) {
+        AlertDialog.Builder(this)
+            .setTitle("Confirm Deletion")
+            .setMessage("Are you sure you want to delete this task?")
+            .setPositiveButton("Delete") { dialog, which ->
+                taskViewModel.deleteTaskItem(taskItem)  // Ensure this matches the method in ViewModel
+            }
+            .setNegativeButton("Cancel", null)
+            .show()
     }
 }
