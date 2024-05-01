@@ -1,4 +1,4 @@
-package com.example.todolisttutorial
+package com.example.todo
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todolisttutorial.databinding.ActivityMainBinding
+import com.example.todo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), TaskItemClickListener {
     private lateinit var binding: ActivityMainBinding

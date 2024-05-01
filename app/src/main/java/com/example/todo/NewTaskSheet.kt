@@ -1,4 +1,4 @@
-package com.example.todolisttutorial
+package com.example.todo
 
 import android.app.TimePickerDialog
 import android.os.Bundle
@@ -6,9 +6,8 @@ import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.todolisttutorial.databinding.FragmentNewTaskSheetBinding
+import com.example.todo.databinding.FragmentNewTaskSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.chip.Chip
 import java.time.LocalTime

@@ -1,9 +1,9 @@
-package com.example.todolisttutorial
+package com.example.todo
 
 import android.content.Context
 import android.graphics.Paint
 import androidx.recyclerview.widget.RecyclerView
-import com.example.todolisttutorial.databinding.TaskItemCellBinding
+import com.example.todo.databinding.TaskItemCellBinding
 import com.google.android.material.chip.Chip
 import java.time.format.DateTimeFormatter
 

@@ -1,9 +1,8 @@
-package com.example.todolisttutorial
+package com.example.todo
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import java.time.LocalDate
-import java.util.*
 
 class TaskViewModel : ViewModel() {
     var taskItems = MutableLiveData<MutableList<TaskItem>>()
