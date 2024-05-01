@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.todolisttutorial.databinding.TaskItemCellBinding
 
 class TaskItemAdapter(
-    private val taskItems: List<TaskItem>,
+    val taskItems: List<TaskItem>,
     private val clickListener: TaskItemClickListener
 ): RecyclerView.Adapter<TaskItemViewHolder>()
 {

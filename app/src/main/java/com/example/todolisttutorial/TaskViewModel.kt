@@ -39,7 +39,9 @@ class TaskViewModel : ViewModel() {
         taskItems.postValue(list)
     }
     fun deleteTaskItem(taskItem: TaskItem) {
-        taskItems.value?.remove(taskItem)
-        taskItems.postValue(taskItems.value)
+        taskItems.value?.let {
+            it.remove(taskItem)
+            taskItems.postValue(it)
+        }
     }
 }
