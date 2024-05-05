@@ -3,6 +3,7 @@ package com.example.todo
 import android.app.TimePickerDialog
 import android.os.Bundle
 import android.text.Editable
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -47,7 +48,7 @@ class NewTaskSheet(var taskItem: TaskItem?) : BottomSheetDialogFragment() {
             val newTask = currentTask?.apply {
                 this.name = name
                 this.desc = desc
-                this.dueTime = dueTime
+                this.dueTime = LocalTime.parse(binding.timePickerButton.text)
             } ?: TaskItem(name, desc, dueTime, null, tags = tags)
 
             if (currentTask == null) taskViewModel.addTaskItem(newTask)
