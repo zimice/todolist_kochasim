@@ -13,6 +13,24 @@ Aplikace nabízí následující funkce:
 - **Odstranění úkolu:** Uživatelé mohou jednoduše odstranit úkoly, které již nejsou aktuální nebo potřebné.
 - **Označení úkolu jako dokončeného:** Úkoly lze označit jako dokončené s možností zobrazení datumu dokončení.
 
+## Wireframes
+
+
+### Hlavní scéna
+![Main View](wireframes/main.png)
+
+### Nový task
+![New Task](wireframes/newTask.png)
+
+### Nastavení času
+![Set Time](wireframes/SetTime.png)
+
+### Pohleda na nově vytvořený task
+![Task View](wireframes/taskView.png)
+
+### Kliknutím na něj spustím editaci Tasku
+![Edit Task](wireframes/EditTask.png)
+
 ## Testování
 Aplikace byla testována za účelem ověření její funkčnosti a uživatelské přívětivosti. Testování zahrnovalo:
 
@@ -22,5 +40,3 @@ Aplikace byla testována za účelem ověření její funkčnosti a uživatelsk�
 
 ### Použité zařízení
 Aplikace byla testována na zařízení T-mobile T-Phone 2023, s verzí Androidu 14.0 což zajistilo, že aplikace funguje na nejnovější verzi Androidu.
-
-
